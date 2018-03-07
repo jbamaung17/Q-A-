@@ -1,0 +1,32 @@
+Polymorphism
+What does the word 'polymorphism' mean?
+Many forms, one thing being many things at once.
+
+What does it mean when we apply polymorphism to OO design? Give a simple Java example.
+When one class can be two things simultaneously and share properties and or methods. For example in Java we have inheritance, so if we had a "Person" class which gave a "name", an "age", etc, we could make a "Student" class which would inherit those properties from the "Person" class. There for an instance of a Student would not only be a Student, they would also be a person.
+
+
+What can we use to implement polymorphism in Java?
+We can use subtyping (such as inheritance as explained above, or an interface {which gives all things which implement the interface the same methods but is indifferent to how those methods are utilised, so long as they are a method of the class it is implemented on}), parametric morphism, and ad-hoc, which is when we use method overloading, which is where you have two of the same functions taking in different arguments.
+
+How many 'forms' can an object take when using polymorphism?
+With inheritance your class can only inherit from one other class. With interfaces you may use as many interfaces as you like, the general rule of thumb being it's better to use many specific interfaces, than one large vague one.
+
+Give an example of when you could use polymorphism.
+For example in Dungeons and Dragons, you have many different classes a character can be (such as a bard, a druid, a barbarian, etc), but these are all instances of a character, they'll share many things in common (like a name, certain methods such as walking, resting and so on) but their spells or moves or weapons they can access may be different. So we would start off with a "Character" class which would include all the things the Classes (this is where it gets confusing as Class is a keyword in Java) like a name, walking methods, etc. And each different Class (i.e. a Bard or a Druid) would inherit off of the Abstract class of a Character (which we would never make a direct instance of). A Bard would then be polymorphic as not only would it be a "Bard" it would simultaneously exist as a "Character".
+
+
+Composition
+What do we mean by 'composition' in reference to object-oriented programming?
+Composition is when we imply what a class comprises of, in the case of there being a "Car" class it would possibly have in it a property which could be an "Engine", the engine would be part of the composition of the car.
+Composition allows us to use the behaviour of a group of other classes in one class.
+
+When would you use composition? Provide a simple example in Java.
+Today we saw the example in our computer lab today, we used composition to allow the computer to use functions of a printer by it being an output device which the computer could access.
+
+
+What is/are the advantage(s) of using composition?
+We can use it instead of inheritance which can be quite complicated in larger programmes as further down the line one class may not NEED all the things it inherits but there would be no way to override that.
+
+What happens to the behaviours when the object composed of them is destroyed?
+They continue to exist and it doesn't further complicate or extend to others as it has independent function.
